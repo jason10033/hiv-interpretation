@@ -34,7 +34,7 @@ export default function About() {
         boxShadow: 'var(--shadow)',
       }}>
         <h1 style={{ fontSize: 18, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 12 }}>
-          About This Tool
+          About HIV Algorithm
         </h1>
         <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.65, marginBottom: 12 }}>
           This HIV test interpretation reference is brought to you by the <strong style={{ color: 'var(--text-primary)' }}>NYC STI/HIV Prevention Training Center (PTC)</strong>, a CDC-funded regional training center serving New York, New Jersey, Puerto Rico, the U.S. Virgin Islands, Michigan, Ohio and Indiana.
