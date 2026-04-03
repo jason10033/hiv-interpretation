@@ -2,6 +2,16 @@ import { useNavigate } from 'react-router-dom'
 
 const ROUTES = [
   {
+    id: 'lookup',
+    icon: '✓',
+    label: 'I have results in front of me',
+    sublabel: 'Enter results, get interpretation instantly',
+    path: '/lookup',
+    color: '#162447',
+    bg: 'var(--primary-bg)',
+    border: 'var(--primary-border)',
+  },
+  {
     id: 'reactive',
     icon: '⊕',
     label: 'Reactive 4th-gen Ag/Ab result',

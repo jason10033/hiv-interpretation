@@ -6,6 +6,7 @@ import Scenarios from './pages/Scenarios'
 import WindowPeriod from './pages/WindowPeriod'
 import QuickReference from './pages/QuickReference'
 import About from './pages/About'
+import ResultLookup from './pages/ResultLookup'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/scenarios" element={<Scenarios />} />
           <Route path="/window" element={<WindowPeriod />} />
           <Route path="/reference" element={<QuickReference />} />
+          <Route path="/lookup" element={<ResultLookup />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </main>

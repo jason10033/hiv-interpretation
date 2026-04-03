@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 const NAV = [
   { path: '/', label: 'Home' },
+  { path: '/lookup', label: 'Lookup' },
   { path: '/algorithm', label: 'Algorithm' },
   { path: '/scenarios', label: 'Cases' },
   { path: '/window', label: 'Window' },
