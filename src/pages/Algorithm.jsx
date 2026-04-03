@@ -11,13 +11,13 @@ const NODE_INFO = {
   test2: {
     title: 'HIV-1/HIV-2 Antibody Differentiation Immunoassay',
     detects: 'IgG antibodies specifically against HIV-1 vs HIV-2 antigens using a multispot or similar assay.',
-    reactive: 'A reactive result that differentiates HIV-1 from HIV-2 is highly specific. A non-differentiating or indeterminate result requires step 3.',
+    reactive: 'A reactive result for HIV-1 or HIV-2 is evidence of HIV infection. A non-differentiating or indeterminate result requires step 3.',
     falsePositive: 'Indeterminate differentiation most often indicates early HIV-1 seroconversion (antibodies forming but not yet fully differentiated), not HIV-2.',
     source: 'Masciotra et al., J Clin Virol 2011',
   },
   test3: {
     title: 'HIV-1 NAT (Nucleic Acid Test / RNA)',
-    detects: 'HIV-1 viral RNA. Detectable approximately 10–14 days after exposure, before antibodies form.',
+    detects: 'HIV-1 viral RNA. Detectable approximately 10–14 days after exposure, before antibodies form. Both qualitative and quantitative (viral load) NATs are acceptable per CDC guidelines — use whichever is available.',
     reactive: 'A reactive NAT after an indeterminate differentiation assay indicates acute HIV-1 infection — the window period before full seroconversion.',
     falsePositive: 'False-positive NAT: ~0.01–0.1%. A negative NAT after reactive Ag/Ab and non-reactive differentiation = most likely a false-positive combo test.',
     source: 'Fiebig et al., AIDS 2003',
@@ -318,7 +318,7 @@ export default function Algorithm() {
           <CascadePipe label="Non-reactive" color="var(--indeterminate-border)" />
           <ResultBadge label="Negative / Indeterminate" type="indeterminate" />
           <div style={{ padding: '8px 10px', background: 'var(--indeterminate-bg)', border: '1px solid var(--indeterminate-border)', borderRadius: 8, marginTop: 2 }}>
-            <p style={{ fontSize: 10, color: 'var(--text-secondary)', lineHeight: 1.4 }}>Likely false-positive combo test. Retest in 2–4 weeks if indicated.</p>
+            <p style={{ fontSize: 10, color: 'var(--text-secondary)', lineHeight: 1.4 }}>Likely false-positive combo test. If concern for very recent exposure, retest in 2–4 weeks.</p>
           </div>
         </div>
       </div>

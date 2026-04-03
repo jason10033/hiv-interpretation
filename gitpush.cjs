@@ -19,7 +19,7 @@ function run(cmd) {
 run('config user.email "jason10033@github.com"')
 run('config user.name "Jason"')
 run('add -A')
-run('commit -m "About: expand PTC description with regions served, Columbia affiliation, and NNPTC network"')
+run('commit -m "Algorithm: clarify step 2 reactive meaning, add qualitative vs quantitative NAAT note, tighten step 3 neg result language"')
 run('push origin main')
 log.push('\n--- Done. Check https://hiv-interpretation.netlify.app ---')
 log.forEach(l => console.log(l))
