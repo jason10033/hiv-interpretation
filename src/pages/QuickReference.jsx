@@ -48,7 +48,7 @@ const TABLE_ROWS = [
     hiv2: 'Nonreactive',
     rna: 'Reactive',
     interpretation: 'Acute HIV-1 Infection',
-    detail: 'Antibodies not yet developed. Urgent linkage to care — extremely infectious. Immediate ART. Partner notification.',
+    detail: 'Antibodies not yet developed. Urgent linkage to care. Extremely infectious. Immediate ART. Partner notification.',
     type: 'reactive',
   },
   {
@@ -159,7 +159,7 @@ export default function QuickReference() {
           {[
             {
               title: 'Rapid (3rd-gen) vs. Lab-based (4th-gen) testing',
-              text: 'Point-of-care rapid tests are usually 3rd-generation — they detect HIV antibodies only, with a longer window period (~23–90 days). Lab-based 4th-generation assays detect both p24 antigen and antibodies, shortening the window period to ~18–45 days. A reactive rapid test always requires confirmatory lab-based testing per the CDC algorithm. A negative rapid test in an acute exposure window does not rule out HIV.',
+              text: 'Point-of-care rapid tests are usually 3rd-generation: they detect HIV antibodies only, with a longer window period (~23-90 days). Lab-based 4th-generation assays detect both p24 antigen and antibodies, shortening the window period to ~18-45 days. A reactive rapid test always requires confirmatory lab-based testing per the CDC algorithm. A negative rapid test in an acute exposure window does not rule out HIV.',
             },
             {
               title: 'Recent exposure (<45 days), negative result',
@@ -171,7 +171,7 @@ export default function QuickReference() {
             },
             {
               title: 'Patient on PrEP',
-              text: 'Tenofovir/emtricitabine can blunt seroconversion. A person who acquires HIV on PrEP may show atypical patterns — prolonged indeterminate differentiation, lower viral loads. Maintain high suspicion and use RNA testing.',
+              text: 'Tenofovir/emtricitabine can blunt seroconversion. A person who acquires HIV on PrEP may show atypical patterns, including prolonged indeterminate differentiation and lower viral loads. Maintain high suspicion and use RNA testing.',
             },
             {
               title: 'Infant / perinatal exposure',

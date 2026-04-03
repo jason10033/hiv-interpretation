@@ -43,7 +43,7 @@ export default function About() {
           A program of <strong style={{ color: 'var(--text-primary)' }}>Columbia University Mailman School of Public Health</strong> Department of Sociomedical Sciences, the PTC is dedicated to increasing the sexual health knowledge and skills of clinical health professionals in the prevention, diagnosis, and management of sexually transmitted infections (STIs). We work with clinical providers and are part of the <strong style={{ color: 'var(--text-primary)' }}>National Network of STD Clinical Prevention Training Centers (NNPTC)</strong>.
         </p>
         <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.65 }}>
-          This tool is designed to support clinicians at the point of care in interpreting results from the CDC/APHL 2014 Recommended Laboratory HIV Testing Algorithm — providing both rapid lookup and durable clinical education in one place.
+          This tool is designed to support clinicians at the point of care in interpreting results from the CDC/APHL 2014 Recommended Laboratory HIV Testing Algorithm, providing both rapid lookup and durable clinical education in one place.
         </p>
       </div>
 
@@ -63,7 +63,7 @@ export default function About() {
           { icon: '⬡', label: 'Interactive Algorithm', desc: 'Tap-to-expand nodes explaining each step of the CDC/APHL testing sequence' },
           { icon: '⊞', label: 'Clinical Case Library', desc: '5 canonical result patterns with tap-to-reveal interpretations and evidence-based rationale' },
           { icon: '◷', label: 'Window Period Explorer', desc: 'Interactive timeline showing when each test becomes detectable after exposure' },
-          { icon: '≡', label: 'Quick Reference Card', desc: 'Every result combination mapped to interpretation and next step — built to bookmark' },
+          { icon: '≡', label: 'Quick Reference Card', desc: 'Every result combination mapped to interpretation and next step. Built to bookmark.' },
         ].map(({ icon, label, desc }) => (
           <div key={label} style={{ padding: '14px 20px', borderBottom: '1px solid var(--border)', display: 'flex', gap: 14, alignItems: 'flex-start' }}>
             <span style={{ fontSize: 18, color: 'var(--primary-mid)', flexShrink: 0, marginTop: 1 }}>{icon}</span>

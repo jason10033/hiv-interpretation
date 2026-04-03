@@ -4,7 +4,7 @@ const NODE_INFO = {
   test1: {
     title: '4th-Generation HIV-1/2 Ag/Ab Combination Immunoassay',
     detects: 'HIV-1 p24 antigen and antibodies to both HIV-1 and HIV-2.',
-    reactive: 'A reactive result means antigen or antibody (or both) were detected. It does not yet confirm infection — all reactive results require step 2.',
+    reactive: 'A reactive result means antigen or antibody (or both) were detected. It does not yet confirm infection. All reactive results require step 2.',
     falsePositive: 'False-positive rate: ~0.5% in low-prevalence populations. Causes include autoimmune disease, recent flu vaccine, pregnancy, and lab error.',
     source: 'Branson et al., MMWR 2014; 63(RR-03)',
   },
@@ -17,8 +17,8 @@ const NODE_INFO = {
   },
   test3: {
     title: 'HIV-1 NAT (Nucleic Acid Test / RNA)',
-    detects: 'HIV-1 viral RNA. Detectable approximately 10–14 days after exposure, before antibodies form. Both qualitative and quantitative (viral load) NATs are acceptable per CDC guidelines — use whichever is available.',
-    reactive: 'A reactive NAT after an indeterminate differentiation assay indicates acute HIV-1 infection — the window period before full seroconversion.',
+    detects: 'HIV-1 viral RNA. Detectable approximately 10–14 days after exposure, before antibodies form. Both qualitative and quantitative (viral load) NATs are acceptable per CDC guidelines; use whichever is available.',
+    reactive: 'A reactive NAT after an indeterminate differentiation assay indicates acute HIV-1 infection (the window period before full seroconversion).',
     falsePositive: 'False-positive NAT: ~0.01–0.1%. A negative NAT after reactive Ag/Ab and non-reactive differentiation = most likely a false-positive combo test.',
     source: 'Fiebig et al., AIDS 2003',
   },

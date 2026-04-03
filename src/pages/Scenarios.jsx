@@ -26,10 +26,10 @@ const SCENARIOS = [
     results: [
       { test: 'HIV-1/2 Ag/Ab Combo (4th gen)', result: 'REACTIVE', type: 'reactive' },
       { test: 'HIV-1/2 Antibody Differentiation', result: 'NEGATIVE (indeterminate pattern)', type: 'indeterminate' },
-      { test: 'HIV-1 NAT / RNA', result: 'REACTIVE — 2,400,000 copies/mL', type: 'reactive' },
+      { test: 'HIV-1 NAT / RNA', result: 'REACTIVE: 2,400,000 copies/mL', type: 'reactive' },
     ],
     interpretation: 'Acute HIV-1 infection. Patient is in the window period before full seroconversion.',
-    rationale: 'The p24 antigen triggered the 4th-gen test. Antibodies have not yet fully formed, so differentiation is negative/indeterminate. A reactive NAT confirms active viral replication. This is the classic acute HIV pattern — patients are highly infectious at this stage.',
+    rationale: 'The p24 antigen triggered the 4th-gen test. Antibodies have not yet fully formed, so differentiation is negative/indeterminate. A reactive NAT confirms active viral replication. This is the classic acute HIV pattern; patients are highly infectious at this stage.',
     source: 'Fiebig EW et al. AIDS 2003; Branson et al. MMWR 2014',
     nextSteps: 'Urgent HIV care referral. Extremely high viral load means high transmission risk. Offer immediate ART initiation. Discuss partner notification.',
   },
@@ -58,7 +58,7 @@ const SCENARIOS = [
     results: [
       { test: 'HIV-1/2 Ag/Ab Combo (4th gen)', result: 'REACTIVE', type: 'reactive' },
       { test: 'HIV-1/2 Antibody Differentiation', result: 'INDETERMINATE (bands for both HIV-1 and HIV-2)', type: 'indeterminate' },
-      { test: 'HIV-1 NAT / RNA', result: 'REACTIVE — 48,000 copies/mL', type: 'reactive' },
+      { test: 'HIV-1 NAT / RNA', result: 'REACTIVE: 48,000 copies/mL', type: 'reactive' },
     ],
     interpretation: 'Consistent with HIV-1 infection. Indeterminate differentiation with positive RNA most likely represents HIV-1 with cross-reactive antibodies.',
     rationale: 'When both HIV-1 and HIV-2 bands are present on the differentiation assay, the result is called indeterminate. A positive HIV-1 RNA in this setting strongly favors HIV-1. HIV-2 is rare in the US and in PWID populations. The algorithm designates this as "HIV-positive, HIV type undetermined" pending confirmatory testing.',
@@ -79,7 +79,7 @@ const SCENARIOS = [
     interpretation: 'HIV-2 antibodies detected. Consistent with HIV-2 infection.',
     rationale: 'HIV-2 is endemic in West Africa. The differentiation assay uses separate antigens for HIV-1 and HIV-2 and can distinguish them. HIV-2 has a slower natural history but standard HIV-1 RNA assays do not reliably quantify HIV-2. Send HIV-2 RNA if available.',
     source: 'Gottlieb GS et al. Lancet Infect Dis 2008; CDC 2014',
-    nextSteps: 'Refer to HIV specialist experienced with HIV-2. Order HIV-2 RNA (specific assay required — standard HIV-1 viral load is unreliable). CD4 count. NNRTIs are not effective against HIV-2.',
+    nextSteps: 'Refer to HIV specialist experienced with HIV-2. Order HIV-2 RNA (specific assay required; standard HIV-1 viral load is unreliable). CD4 count. NNRTIs are not effective against HIV-2.',
   },
 ]
 

@@ -19,7 +19,7 @@ function run(cmd) {
 run('config user.email "jason10033@github.com"')
 run('config user.name "Jason"')
 run('add -A')
-run('commit -m "Algorithm: clarify step 2 reactive meaning, add qualitative vs quantitative NAAT note, tighten step 3 neg result language"')
+run('commit -m "Replace all em dashes with commas, semicolons, colons, or periods throughout"')
 run('push origin main')
 log.push('\n--- Done. Check https://hiv-interpretation.netlify.app ---')
 log.forEach(l => console.log(l))

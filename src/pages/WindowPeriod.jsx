@@ -86,7 +86,7 @@ const STAGES = [
 export default function WindowPeriod() {
   const [day, setDay] = useState(21)
 
-  const dayLabel = day === 0 ? 'Day 0 — Exposure' : `Day ${day} post-exposure`
+  const dayLabel = day === 0 ? 'Day 0: Exposure' : `Day ${day} post-exposure`
 
   // Determine which stage we're in
   const stage = STAGES.find(s => day >= s.start && day < s.end) || STAGES[STAGES.length - 1]
