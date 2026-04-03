@@ -19,7 +19,7 @@ function run(cmd) {
 run('config user.email "jason10033@github.com"')
 run('config user.name "Jason"')
 run('add -A')
-run('commit -m "Quick Reference: unified table with RNA NAAT column, rapid vs lab testing info, remove duplicate cards"')
+run('commit -m "About: expand PTC description with regions served, Columbia affiliation, and NNPTC network"')
 run('push origin main')
 log.push('\n--- Done. Check https://hiv-interpretation.netlify.app ---')
 log.forEach(l => console.log(l))

@@ -37,10 +37,13 @@ export default function About() {
           About This Tool
         </h1>
         <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.65, marginBottom: 12 }}>
-          This HIV test interpretation reference is brought to you by the <strong style={{ color: 'var(--text-primary)' }}>NYC STI/HIV Prevention Training Center</strong>, a CDC-funded regional training center serving New York, New Jersey, Puerto Rico, and the U.S. Virgin Islands.
+          This HIV test interpretation reference is brought to you by the <strong style={{ color: 'var(--text-primary)' }}>NYC STI/HIV Prevention Training Center (PTC)</strong>, a CDC-funded regional training center serving New York, New Jersey, Puerto Rico, the U.S. Virgin Islands, Michigan, Ohio and Indiana.
+        </p>
+        <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.65, marginBottom: 12 }}>
+          A program of <strong style={{ color: 'var(--text-primary)' }}>Columbia University Mailman School of Public Health</strong> Department of Sociomedical Sciences, the PTC is dedicated to increasing the sexual health knowledge and skills of clinical health professionals in the prevention, diagnosis, and management of sexually transmitted infections (STIs). We work with clinical providers and are part of the <strong style={{ color: 'var(--text-primary)' }}>National Network of STD Clinical Prevention Training Centers (NNPTC)</strong>.
         </p>
         <p style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.65 }}>
-          The tool is designed to support clinicians at the point of care in interpreting results from the CDC/APHL 2014 Recommended Laboratory HIV Testing Algorithm — providing both rapid lookup and durable clinical education in one place.
+          This tool is designed to support clinicians at the point of care in interpreting results from the CDC/APHL 2014 Recommended Laboratory HIV Testing Algorithm — providing both rapid lookup and durable clinical education in one place.
         </p>
       </div>
 
