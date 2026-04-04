@@ -3,6 +3,12 @@ import { useState } from 'react'
 const BRAND_DARK = '#162447'
 
 const RESULTS = {
+  idConsult: {
+    type: 'indeterminate',
+    title: 'Atypical Result Pattern — ID Consult Recommended',
+    body: 'This combination of results does not fit a standard algorithm pathway.',
+    next: 'Consult an Infectious Disease specialist or HIV expert. Document all results carefully. Consider HIV-2 specific testing, repeat testing in 2-4 weeks, and review for unusual clinical circumstances (e.g. recent immunization, autoimmune disease, prior HIV treatment).',
+  },
   negative: {
     type: 'negative',
     title: 'HIV Negative',
@@ -50,13 +56,17 @@ const RESULT_STYLES = {
 
 function getResult(s1, s2hiv1, s2hiv2, s3) {
   if (s1 === 'nonreactive') return RESULTS.negative
+  if (s2hiv1 === null || s2hiv2 === null) return null
   if (s2hiv1 === 'reactive' && s2hiv2 === 'nonreactive') return RESULTS.hiv1
   if (s2hiv1 === 'nonreactive' && s2hiv2 === 'reactive') return RESULTS.hiv2
   if (s2hiv1 === 'reactive' && s2hiv2 === 'reactive') return RESULTS.coinfection
-  // indeterminate or nonreactive hiv1 + nonreactive hiv2 → need RNA
-  if (s3 === 'reactive') return RESULTS.acute
-  if (s3 === 'nonreactive') return RESULTS.falsePositive
-  return null
+  if (needsRNA(s2hiv1, s2hiv2)) {
+    if (s3 === 'reactive') return RESULTS.acute
+    if (s3 === 'nonreactive') return RESULTS.falsePositive
+    return null // waiting for RNA input
+  }
+  // Any other combination (e.g. indeterminate HIV-1 + reactive HIV-2)
+  return RESULTS.idConsult
 }
 
 function needsRNA(s2hiv1, s2hiv2) {

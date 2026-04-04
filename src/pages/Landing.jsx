@@ -1,16 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 
-const ROUTES = [
-  {
-    id: 'lookup',
-    icon: '✓',
-    label: 'I have results in front of me',
-    sublabel: 'Enter results, get interpretation instantly',
-    path: '/lookup',
-    color: '#162447',
-    bg: 'var(--primary-bg)',
-    border: 'var(--primary-border)',
-  },
+const MAIN_ROUTES = [
   {
     id: 'reactive',
     icon: '⊕',
@@ -53,14 +43,6 @@ export default function Landing() {
       padding: '32px 16px 48px',
     }}>
       <div style={{ marginBottom: 32 }}>
-        <p style={{
-          fontSize: 11,
-          fontWeight: 700,
-          letterSpacing: '0.1em',
-          textTransform: 'uppercase',
-          color: 'var(--text-muted)',
-          marginBottom: 8,
-        }}>CDC/APHL 2014 Algorithm</p>
         <h1 style={{
           fontSize: 26,
           fontWeight: 700,
@@ -78,7 +60,7 @@ export default function Landing() {
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-        {ROUTES.map((route) => (
+        {MAIN_ROUTES.map((route) => (
           <button
             key={route.id}
             onClick={() => navigate(route.path)}
@@ -134,59 +116,51 @@ export default function Landing() {
             }}>›</span>
           </button>
         ))}
-      </div>
 
-      <div style={{
-        marginTop: 36,
-        padding: '20px',
-        background: 'var(--surface)',
-        border: '1px solid var(--border)',
-        borderRadius: 'var(--radius)',
-        boxShadow: 'var(--shadow)',
-      }}>
-        <p style={{
-          fontSize: 12,
-          fontWeight: 600,
-          color: 'var(--text-muted)',
-          textTransform: 'uppercase',
-          letterSpacing: '0.08em',
-          marginBottom: 10,
-        }}>Learn the full picture</p>
-        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-          {[
-            { label: 'Algorithm', path: '/algorithm' },
-            { label: 'Case Library', path: '/scenarios' },
-            { label: 'Window Period', path: '/window' },
-            { label: 'Quick Reference', path: '/reference' },
-          ].map(({ label, path }) => (
-            <button
-              key={path}
-              onClick={() => navigate(path)}
-              style={{
-                fontSize: 13,
-                fontWeight: 500,
-                color: 'var(--primary-mid)',
-                background: 'var(--primary-bg)',
-                border: '1px solid var(--primary-border)',
-                borderRadius: 6,
-                padding: '6px 12px',
-                cursor: 'pointer',
-              }}
-            >{label}</button>
-          ))}
-        </div>
+        {/* Lookup — at the bottom */}
+        <button
+          onClick={() => navigate('/lookup')}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 16,
+            background: 'var(--surface)',
+            border: '1.5px solid var(--border)',
+            borderRadius: 'var(--radius)',
+            padding: '18px 20px',
+            textAlign: 'left',
+            boxShadow: 'var(--shadow)',
+            cursor: 'pointer',
+            width: '100%',
+            marginTop: 8,
+          }}
+          onTouchStart={e => e.currentTarget.style.transform = 'scale(0.98)'}
+          onTouchEnd={e => e.currentTarget.style.transform = 'scale(1)'}
+        >
+          <span style={{
+            fontSize: 22,
+            width: 40,
+            height: 40,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'var(--primary-bg)',
+            borderRadius: 10,
+            boxShadow: 'var(--shadow)',
+            flexShrink: 0,
+            color: '#162447',
+          }}>✓</span>
+          <div style={{ minWidth: 0 }}>
+            <div style={{ fontSize: 15, fontWeight: 600, color: '#162447', lineHeight: 1.3, marginBottom: 2 }}>
+              I just want to know what to do
+            </div>
+            <div style={{ fontSize: 13, color: 'var(--text-secondary)' }}>
+              Enter your results, get an interpretation
+            </div>
+          </div>
+          <span style={{ marginLeft: 'auto', color: '#162447', opacity: 0.4, fontSize: 18, flexShrink: 0 }}>›</span>
+        </button>
       </div>
-
-      <p style={{
-        marginTop: 24,
-        fontSize: 11,
-        color: 'var(--text-muted)',
-        textAlign: 'center',
-        lineHeight: 1.5,
-      }}>
-        Based on CDC/APHL Recommended HIV Testing Algorithm (2014).
-        Clinical decisions require professional judgment.
-      </p>
     </div>
   )
 }
