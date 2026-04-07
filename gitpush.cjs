@@ -19,7 +19,7 @@ function run(cmd) {
 run('config user.email "jason10033@github.com"')
 run('config user.name "Jason"')
 run('add -A')
-run('commit -m "Add Feedback page with Netlify Forms integration"')
+run('commit -m "Fix Netlify Forms detection: add netlify attribute to hidden form"')
 run('push origin main')
 log.push('\n--- Done. Check https://hiv-interpretation.netlify.app ---')
 log.forEach(l => console.log(l))
