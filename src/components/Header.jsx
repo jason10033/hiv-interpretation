@@ -6,7 +6,7 @@ const NAV = [
   { path: '/algorithm', label: 'Algorithm' },
   { path: '/scenarios', label: 'Cases' },
   { path: '/window', label: 'Window' },
-  { path: '/reference', label: 'Reference' },
+  { path: '/reference', label: 'Summary' },
   { path: '/about', label: 'About' },
   { path: '/feedback', label: 'Feedback' },
 ]
@@ -82,6 +82,19 @@ export default function Header() {
           )
         })}
       </nav>
+
+      <span style={{
+        fontSize: 10,
+        fontWeight: 700,
+        letterSpacing: '0.08em',
+        textTransform: 'uppercase',
+        color: BRAND_RED,
+        background: 'rgba(255,255,255,0.92)',
+        border: `1.5px solid ${BRAND_RED}`,
+        borderRadius: 4,
+        padding: '3px 7px',
+        flexShrink: 0,
+      }}>Beta</span>
 
     </header>
   )
