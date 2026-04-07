@@ -8,6 +8,7 @@ const NAV = [
   { path: '/window', label: 'Window' },
   { path: '/reference', label: 'Reference' },
   { path: '/about', label: 'About' },
+  { path: '/feedback', label: 'Feedback' },
 ]
 
 // NYC STD/HIV PTC brand colors (from logo: red + blue/purple)

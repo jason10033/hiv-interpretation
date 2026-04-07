@@ -7,6 +7,7 @@ import WindowPeriod from './pages/WindowPeriod'
 import QuickReference from './pages/QuickReference'
 import About from './pages/About'
 import ResultLookup from './pages/ResultLookup'
+import Feedback from './pages/Feedback'
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/reference" element={<QuickReference />} />
           <Route path="/lookup" element={<ResultLookup />} />
           <Route path="/about" element={<About />} />
+          <Route path="/feedback" element={<Feedback />} />
         </Routes>
       </main>
     </div>
