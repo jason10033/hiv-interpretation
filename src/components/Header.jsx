@@ -42,7 +42,7 @@ export default function Header() {
         style={{ display: 'flex', alignItems: 'center', minWidth: 0, textDecoration: 'none', flexShrink: 0 }}
       >
         <img
-          src="https://nnptc.org/wp-content/uploads/2024/10/NYCSTD-SMall-HIV-Logo-2024_6Color_OL_Tranpnt.png"
+          src="/ptc-logo.png"
           alt="NYC STI/HIV Prevention Training Center"
           style={{ height: 38, width: 'auto', display: 'block' }}
         />

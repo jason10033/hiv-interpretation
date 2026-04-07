@@ -18,7 +18,7 @@ export default function About() {
         boxShadow: 'var(--shadow-md)',
       }}>
         <img
-          src="https://nnptc.org/wp-content/uploads/2024/10/NYCSTD-SMall-HIV-Logo-2024_6Color_OL_Tranpnt.png"
+          src="/ptc-logo.png"
           alt="NYC STI/HIV Prevention Training Center"
           style={{ height: 80, width: 'auto', display: 'block' }}
         />
