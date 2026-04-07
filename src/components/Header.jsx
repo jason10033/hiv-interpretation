@@ -83,22 +83,6 @@ export default function Header() {
         })}
       </nav>
 
-      <Link
-        to="/reference"
-        style={{
-          fontSize: 11,
-          fontWeight: 700,
-          color: 'white',
-          background: BRAND_RED,
-          border: 'none',
-          borderRadius: 6,
-          padding: '5px 10px',
-          whiteSpace: 'nowrap',
-          flexShrink: 0,
-        }}
-      >
-        Quick Ref
-      </Link>
     </header>
   )
 }
