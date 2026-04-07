@@ -18,8 +18,10 @@ function run(cmd) {
 
 run('config user.email "jason10033@github.com"')
 run('config user.name "Jason"')
+run('rm "STD HIV Logo 2024_6Color_OL_WTbkg.png"')
+run('rm moveLogo.cjs')
 run('add -A')
-run('commit -m "Replace remote logo with local high-res PTC logo"')
+run('commit -m "Clean up: remove temp logo copy script and duplicate logo from root"')
 run('push origin main')
 log.push('\n--- Done. Check https://hiv-interpretation.netlify.app ---')
 log.forEach(l => console.log(l))
