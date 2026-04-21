@@ -19,7 +19,7 @@ function run(cmd) {
 run('config user.email "jason10033@github.com"')
 run('config user.name "Jason"')
 run('add -A')
-run('commit -m "Add Beta badge to header; rename Reference to Summary in nav"')
+run('commit -m "Reorder home page; logo links to home; rename negative option; nav matches home order"')
 run('push origin main')
 log.push('\n--- Done. Check https://hiv-interpretation.netlify.app ---')
 log.forEach(l => console.log(l))

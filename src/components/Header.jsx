@@ -34,11 +34,9 @@ export default function Header() {
       padding: '0 16px',
       gap: 8,
     }}>
-      {/* Brand */}
-      <a
-        href="https://www.publichealth.columbia.edu/research/centers/new-york-city-sti-hiv-prevention-training-center"
-        target="_blank"
-        rel="noopener noreferrer"
+      {/* Brand — links to home */}
+      <Link
+        to="/"
         style={{ display: 'flex', alignItems: 'center', minWidth: 0, textDecoration: 'none', flexShrink: 0 }}
       >
         <img
@@ -46,7 +44,7 @@ export default function Header() {
           alt="NYC STI/HIV Prevention Training Center"
           style={{ height: 38, width: 'auto', display: 'block' }}
         />
-      </a>
+      </Link>
 
       <nav style={{
         display: 'flex',
