@@ -75,10 +75,6 @@ export default function QuickReference() {
 
       {/* Main Results Table */}
       <div style={{ marginBottom: 28 }}>
-        <div style={{ marginBottom: 12 }}>
-          <h2 style={{ fontSize: 15, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 4 }}>All Result Combinations</h2>
-          <p style={{ fontSize: 12, color: 'var(--text-secondary)' }}>Based on CDC/APHL 2014 recommended laboratory algorithm.</p>
-        </div>
 
         <div style={{
           background: 'var(--surface)',
