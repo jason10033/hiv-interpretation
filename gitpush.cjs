@@ -19,7 +19,7 @@ function run(cmd) {
 run('config user.email "jason10033@github.com"')
 run('config user.name "Jason"')
 run('add -A')
-run('commit -m "Update home page button labels to patient-facing clinical language"')
+run('commit -m "Trim clinical disclaimer: remove and risk"')
 const fs = require('fs')
 const token = fs.readFileSync(require('path').join(__dirname, '.github-token'), 'utf8').trim()
 run(`remote set-url origin https://${token}@github.com/jason10033/hiv-interpretation.git`)

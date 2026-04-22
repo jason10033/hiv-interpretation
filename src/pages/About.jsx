@@ -139,7 +139,7 @@ export default function About() {
           Clinical Disclaimer
         </div>
         <p style={{ fontSize: 12, color: '#78350F', lineHeight: 1.5 }}>
-          This tool is intended as an educational reference for licensed clinicians. It does not replace clinical judgment. Results should always be interpreted in the context of individual patient history and risk.
+          This tool is intended as an educational reference for licensed clinicians. It does not replace clinical judgment. Results should always be interpreted in the context of individual patient history.
         </p>
       </div>
 

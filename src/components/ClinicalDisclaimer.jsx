@@ -13,7 +13,7 @@ export default function ClinicalDisclaimer() {
         Clinical Disclaimer:{' '}
       </span>
       <span style={{ color: '#78350F' }}>
-        This tool is intended as an educational reference for licensed clinicians. It does not replace clinical judgment. Results should always be interpreted in the context of individual patient history and risk.
+        This tool is intended as an educational reference for licensed clinicians. It does not replace clinical judgment. Results should always be interpreted in the context of individual patient history.
       </span>
     </div>
   )
