@@ -50,7 +50,7 @@ const TABLE_ROWS = [
     hiv2: 'Nonreactive',
     rna: 'Reactive',
     interpretation: 'Acute HIV-1 Infection',
-    detail: 'Antibodies not yet developed. Urgent linkage to care. Extremely infectious. Immediate ART. Partner notification.',
+    detail: 'Antibodies not yet developed. Urgent linkage to care. Highly infectious. Immediate ART. Partner notification.',
     type: 'reactive',
   },
   {
