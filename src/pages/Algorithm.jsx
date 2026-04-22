@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ClinicalDisclaimer from '../components/ClinicalDisclaimer'
 
 const NODE_INFO = {
   test1: {
@@ -160,7 +161,7 @@ export default function Algorithm() {
     <div style={{ maxWidth: 520, margin: '0 auto', padding: '28px 16px 56px' }}>
       <div style={{ marginBottom: 24 }}>
         <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: 6 }}>Interactive</p>
-        <h1 style={{ fontSize: 22, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 6 }}>CDC/APHL Recommended Algorithm</h1>
+        <h1 style={{ fontSize: 22, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 6 }}>Recommended HIV Testing Algorithm</h1>
         <p style={{ fontSize: 13, color: 'var(--text-secondary)' }}>Tap any test node to learn what it detects and why it exists in the sequence.</p>
       </div>
 
@@ -323,9 +324,7 @@ export default function Algorithm() {
         </div>
       </div>
 
-      <div style={{ marginTop: 28, padding: '14px 16px', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', fontSize: 11, color: 'var(--text-muted)', lineHeight: 1.6 }}>
-        <strong style={{ color: 'var(--text-secondary)' }}>Source:</strong> Branson BM et al. Revised Recommendations for HIV Testing. <em>MMWR</em> 2014;63(RR-03):1–10. CDC/APHL 2014 Recommended Laboratory HIV Testing Algorithm.
-      </div>
+      <ClinicalDisclaimer />
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ClinicalDisclaimer from '../components/ClinicalDisclaimer'
 
 const BRAND_DARK = '#162447'
 
@@ -194,6 +195,7 @@ export default function ResultLookup() {
                 <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--text-primary)', marginBottom: 6 }}>HIV-2 result</div>
                 <div style={{ display: 'flex', gap: 8 }}>
                   <OptionButton label="Reactive" selected={s2hiv2 === null ? null : s2hiv2 === 'reactive'} onClick={() => handleS2hiv2('reactive')} color="var(--reactive)" />
+                  <OptionButton label="Indeterminate" selected={s2hiv2 === null ? null : s2hiv2 === 'indeterminate'} onClick={() => handleS2hiv2('indeterminate')} color="var(--indeterminate)" />
                   <OptionButton label="Nonreactive" selected={s2hiv2 === null ? null : s2hiv2 === 'nonreactive'} onClick={() => handleS2hiv2('nonreactive')} color="var(--negative)" />
                 </div>
               </div>
@@ -256,9 +258,7 @@ export default function ResultLookup() {
         )}
       </div>
 
-      <p style={{ marginTop: 28, fontSize: 11, color: 'var(--text-muted)', lineHeight: 1.6 }}>
-        Based on CDC/APHL 2014 Recommended Laboratory HIV Testing Algorithm. Not a substitute for clinical judgment.
-      </p>
+      <ClinicalDisclaimer />
     </div>
   )
 }

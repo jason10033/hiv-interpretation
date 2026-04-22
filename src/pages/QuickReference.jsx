@@ -1,3 +1,5 @@
+import ClinicalDisclaimer from '../components/ClinicalDisclaimer'
+
 const TYPE_STYLES = {
   reactive: { dot: 'var(--reactive-dot)', bg: 'var(--reactive-bg)', border: 'var(--reactive-border)', text: 'var(--reactive)' },
   negative: { dot: 'var(--negative-dot)', bg: 'var(--negative-bg)', border: 'var(--negative-border)', text: 'var(--negative)' },
@@ -140,9 +142,6 @@ export default function QuickReference() {
           })}
         </div>
 
-        <p style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 8, paddingLeft: 4 }}>
-          Source: CDC/APHL HIV-1/2 Laboratory Testing Algorithm (2014) · Branson BM et al. <em>MMWR</em> 2014;63(RR-03):1–10
-        </p>
       </div>
 
       {/* Special situations */}
@@ -186,17 +185,7 @@ export default function QuickReference() {
         </div>
       </div>
 
-      <div style={{
-        padding: '12px 14px',
-        background: 'var(--background)',
-        border: '1px solid var(--border)',
-        borderRadius: 'var(--radius-sm)',
-        fontSize: 11,
-        color: 'var(--text-muted)',
-        lineHeight: 1.6,
-      }}>
-        Based on: Branson BM et al. <em>MMWR</em> 2014;63(RR-03):1–10 · Workowski KA et al. STI Treatment Guidelines 2021 · CDC Laboratory HIV Testing Algorithm. Not a substitute for clinical judgment.
-      </div>
+      <ClinicalDisclaimer />
     </div>
   )
 }

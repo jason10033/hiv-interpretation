@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import ClinicalDisclaimer from '../components/ClinicalDisclaimer'
 
 const ROUTES = [
   {
@@ -95,6 +96,7 @@ export default function Landing() {
           </button>
         ))}
       </div>
+      <ClinicalDisclaimer />
     </div>
   )
 }

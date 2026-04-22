@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ClinicalDisclaimer from '../components/ClinicalDisclaimer'
 
 const SCENARIOS = [
   {
@@ -190,7 +191,7 @@ function ScenarioCard({ scenario }) {
               cursor: 'pointer',
             }}
           >
-            Reveal Interpretation
+            Understand Interpretation
           </button>
         </div>
       ) : (
@@ -210,7 +211,6 @@ function ScenarioCard({ scenario }) {
           <div style={{ padding: '14px', background: 'var(--background)', border: '1px solid var(--border)', borderRadius: 'var(--radius-sm)' }}>
             <div style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--text-muted)', marginBottom: 6 }}>Rationale</div>
             <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.6 }}>{scenario.rationale}</p>
-            <p style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 8 }}>Source: {scenario.source}</p>
           </div>
 
           {/* Next steps */}
@@ -251,6 +251,7 @@ export default function Scenarios() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
         {SCENARIOS.map(s => <ScenarioCard key={s.id} scenario={s} />)}
       </div>
+      <ClinicalDisclaimer />
     </div>
   )
 }

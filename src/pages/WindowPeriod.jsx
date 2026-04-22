@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ClinicalDisclaimer from '../components/ClinicalDisclaimer'
 
 // Detection windows (days post-exposure, approximate ranges)
 // Based on Fiebig stages and current literature
@@ -276,6 +277,7 @@ export default function WindowPeriod() {
           Source: Fiebig EW et al. <em>AIDS</em> 2003;17:1871–9. Branson BM et al. <em>MMWR</em> 2014;63(RR-03).
         </p>
       </div>
+      <ClinicalDisclaimer />
     </div>
   )
 }
