@@ -145,7 +145,7 @@ export default function About() {
 
       {/* NNPTC Clinical Consultation */}
       <a
-        href="https://www.nnptc.org/clinical-consultation/"
+        href="https://www.stdccn.org/render/Public"
         target="_blank"
         rel="noopener noreferrer"
         style={{
