@@ -15,7 +15,7 @@ const ROUTES = [
   {
     id: 'reactive',
     icon: '⊕',
-    label: 'Reactive 4th-gen Ag/Ab result',
+    label: 'My patient has a reactive 4th-gen Ag/Ab result',
     sublabel: 'Need to interpret next steps',
     path: '/algorithm',
     color: 'var(--reactive)',
@@ -25,7 +25,7 @@ const ROUTES = [
   {
     id: 'differentiation',
     icon: '≡',
-    label: 'Have differentiation or RNA result',
+    label: 'My patient has a differentiation assay and/or RNA result',
     sublabel: 'Walk through interpretation patterns',
     path: '/scenarios',
     color: 'var(--negative)',
@@ -35,7 +35,7 @@ const ROUTES = [
   {
     id: 'highrisk',
     icon: '◷',
-    label: 'Negative but with recent potential exposure(s)',
+    label: 'My patient tested negative but has recent potential exposures',
     sublabel: 'Understanding window periods',
     path: '/window',
     color: 'var(--primary-mid)',
